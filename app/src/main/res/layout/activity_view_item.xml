@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B1F4EE"
+    tools:context=".AddItems">
+
+
+    <ImageView
+        android:id="@+id/updateImage"
+        android:layout_width="193dp"
+        android:layout_height="182dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="524dp"
+        app:srcCompat="@mipmap/add_image_round" />
+
+    <EditText
+        android:id="@+id/updateDescription"
+        android:layout_width="266dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="355dp"
+        android:background="@drawable/custom_input_text"
+        android:drawableStart="@drawable/ic_round_description"
+        android:drawablePadding="10sp"
+        android:ems="10"
+        android:hint="@string/description"
+        android:inputType="textPersonName"
+        android:padding="10sp" />
+
+    <EditText
+        android:id="@+id/updatePrice"
+        android:layout_width="266dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="264dp"
+        android:background="@drawable/custom_input_text"
+        android:drawableStart="@drawable/ic_currency"
+        android:drawablePadding="10sp"
+        android:ems="10"
+        android:hint="@string/price"
+        android:inputType="numberDecimal"
+        android:padding="10sp" />
+
+    <ImageButton
+        android:id="@+id/updateItem"
+        android:layout_width="76dp"
+        android:layout_height="63dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/custom_input_text"
+        app:srcCompat="@drawable/ic_update" />
+
+    <ImageButton
+        android:id="@+id/img_cam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="246dp"
+        android:layout_marginBottom="447dp"
+        android:background="@drawable/custom_input_text"
+        app:srcCompat="@drawable/ic_camera" />
+
+    <ImageButton
+        android:id="@+id/img_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="447dp"
+        android:background="@drawable/custom_input_text"
+        app:srcCompat="@drawable/ic_image" />
+
+    <RadioGroup
+        android:layout_width="274dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="134dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/mark_purchased"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:text="@string/Purchased" />
+
+        <RadioButton
+            android:id="@+id/mark_pending"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:text="@string/NotPurchased" />
+
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/imageButtonSMS"
+        android:layout_width="76dp"
+        android:layout_height="63dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="249dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/custom_input_text"
+        app:srcCompat="@drawable/ic_round_sms_24" />
+
+    <EditText
+        android:id="@+id/editTextLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="196dp"
+        android:ems="10"
+        android:hint="@string/location"
+        android:inputType="textPersonName" />
+</RelativeLayout>
